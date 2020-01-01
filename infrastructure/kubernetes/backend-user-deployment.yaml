@@ -1,8 +1,6 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  labels:
-    service: backend-user
   name: backend-user
 spec:
   replicas: 2

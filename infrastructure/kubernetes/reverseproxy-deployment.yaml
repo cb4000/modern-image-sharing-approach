@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: reverseproxy
   labels:
-    service: reverseproxy
-  name: reverseproxy-deployment
+    app: reverseproxy
 spec:
   replicas: 2
   selector:
@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-        service: reverseproxy
+        app: reverseproxy
     spec:
       containers:
-      - image: clblount9/micro-feed-apigateway-test
+      - image: clblount9/micro-apigateway-service-test
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

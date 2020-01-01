@@ -4,5 +4,6 @@ services:
   - docker
 
 script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t clblount9/micro-feed-service-test ./microservices/feed/
-  - docker run -p 8080:8080 --name feed clblount9/micro-feed-service-test
+  - docker push clblount9/micro-feed-service-test
