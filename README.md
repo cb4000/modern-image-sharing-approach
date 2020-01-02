@@ -19,3 +19,14 @@ kubectl create -f install/kubernetes/helm/helm-service-account.yaml
 helm init --service-account tiller
 
 kubectl create secret generic  env-secret --from-file=POSTGRESS_USERNAME=/home/charles/postgres-user.txt --from-file=POSTGRESS_PASSWORD=/home/charles/postgres-pw.txt
+
+
+### Containers on dockerhub:
+https://hub.docker.com/repository/docker/clblount9/micro-apigateway-service-test
+
+https://hub.docker.com/repository/docker/clblount9/micro-frontend-service-test
+
+https://hub.docker.com/repository/docker/clblount9/micro-user-service-test
+
+https://hub.docker.com/repository/docker/clblount9/micro-feed-service-test
+
