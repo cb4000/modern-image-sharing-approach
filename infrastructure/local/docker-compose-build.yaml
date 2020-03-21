@@ -4,15 +4,15 @@ services:
     build:
       context: .
     image:  clblount9/micro-apigateway-service-test 
-  backend_user:
-    build:
-      context: ../../users
-    image: clblount9/micro-user-service-test
-  backend_feed:
-    build:
-      context: ../../feed  
-    image: clblount9/micro-feed-service-test
-  frontend:
-    build:
-      context: ../../frontend  
-    image: clblount9/micro-frontend-service-test
+#  backend_user:
+#    build:
+#      context: ../../users
+#    image: clblount9/micro-user-service-test
+#  backend_feed:
+#    build:
+#      context: ../../feed  
+#    image: clblount9/micro-feed-service-test
+#  frontend:
+#    build:
+#      context: ../../frontend  
+#    image: clblount9/micro-frontend-service-test
