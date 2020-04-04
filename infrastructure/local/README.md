@@ -1,5 +1,7 @@
-# Model Texttractor
-This service will let users extract text from images and search the results, this is the infrastructure meant to bring the code to life in the form of a functioning service composed of microservice... this consists of bothe  the lcoal excecution capability and the ability to run on a kubernetes cluster.
+# Udagram Image Filtering Microservice
+
+Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+
 
 http://localhost:8086/?pgsql=db&username=postgres&db=postgres&ns=public
 ## Tasks
@@ -11,4 +13,3 @@ You'll need to install docker https://docs.docker.com/install/. Open a new termi
 2. Push the images: `docker-compose -f docker-compose-build.yaml push`
 3. Run the container: `docker-compose up`
 
-#
