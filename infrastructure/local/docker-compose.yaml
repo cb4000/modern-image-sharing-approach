@@ -48,8 +48,7 @@ services:
 #      - AWS_BUCKET
 #      - JWT_SECRET
 #      - URL="http://localhost:8100"
-#  frontend:
-#    image: clblount9/micro-frontend-service-test
-#    ports:
-#      - "8100:80"
-#
+  frontend:
+    image: clblount9/micro-frontend-service-test
+    ports:
+      - "8100:80"
